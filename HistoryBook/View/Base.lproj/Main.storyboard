@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MlG-ic-KX7">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--História-->
+        <scene sceneID="azz-iB-goI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1EE-ii-hho" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="História" image="hisT" id="va0-za-phg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="C2u-QL-umS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tpw-hI-XUE" kind="relationship" relationship="rootViewController" id="OwU-uW-kPa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9g-Z8-qNK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="svo-Qb-1SW">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="MlG-ic-KX7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mAV-ZZ-UIp">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1EE-ii-hho" kind="relationship" relationship="viewControllers" id="7pT-7a-nQa"/>
+                        <segue destination="ndU-lc-QSt" kind="relationship" relationship="viewControllers" id="cIw-Pe-j4D"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eC9-CJ-t3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+        <!--Ciências-->
+        <scene sceneID="oDE-X4-0QT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ndU-lc-QSt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ciências" image="cien" id="1kd-gc-fi2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="A4H-6I-qko">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GRM-Fd-i6D" kind="relationship" relationship="rootViewController" id="S5u-FC-c0U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NHW-ql-zdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="854"/>
+        </scene>
+        <!--Ciência View Controller-->
+        <scene sceneID="rkj-px-QgP">
+            <objects>
+                <viewController storyboardIdentifier="ciencia" id="GRM-Fd-i6D" userLabel="Ciência View Controller" customClass="Ciencia2ViewController" customModule="HistoryBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HSf-rr-vgQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Ultron" image="fundo cien" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bA1-uK-1bu">
+                                <rect key="frame" x="-4" y="-8" width="422" height="824"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XrH-RE-LWe">
+                                <rect key="frame" x="36.5" y="3.5" width="341" height="283"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XrH-RE-LWe" secondAttribute="height" multiplier="76:63" id="M1N-zJ-VMp"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tpx-bv-yhP">
+                                <rect key="frame" x="27" y="172.5" width="360" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tpx-bv-yhP" secondAttribute="height" multiplier="1536:482" id="DOa-ik-0NM"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tW3-hP-G20">
+                                <rect key="frame" x="36.5" y="268.5" width="341" height="422"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LYs-6A-7p5">
+                                        <rect key="frame" x="0.0" y="25.5" width="341" height="371"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piv-D6-5yy">
+                                                <rect key="frame" x="0.0" y="0.0" width="341" height="74"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ey6-vc-0Xr">
+                                                        <rect key="frame" x="0.0" y="7.5" width="341" height="59"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                        <state key="normal" title="Button" backgroundImage="cie - pergunta">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="pressionadoCiencia:" destination="GRM-Fd-i6D" eventType="touchUpInside" id="WJy-Fe-2KU"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Ey6-vc-0Xr" firstAttribute="centerX" secondItem="piv-D6-5yy" secondAttribute="centerX" id="3LB-CR-azs"/>
+                                                    <constraint firstItem="Ey6-vc-0Xr" firstAttribute="height" secondItem="piv-D6-5yy" secondAttribute="height" multiplier="0.8" id="CAv-Xy-Sys"/>
+                                                    <constraint firstItem="Ey6-vc-0Xr" firstAttribute="width" secondItem="piv-D6-5yy" secondAttribute="width" id="NTa-X8-MSF"/>
+                                                    <constraint firstItem="Ey6-vc-0Xr" firstAttribute="centerY" secondItem="piv-D6-5yy" secondAttribute="centerY" id="baf-3f-AwB"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Hk-Qp-sMK">
+                                                <rect key="frame" x="0.0" y="74" width="341" height="74.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6d-XB-Tl5">
+                                                        <rect key="frame" x="0.0" y="7.5" width="341" height="59.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                        <state key="normal" title="Button" backgroundImage="cie - pergunta">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="pressionadoCiencia:" destination="GRM-Fd-i6D" eventType="touchUpInside" id="4Zc-7Q-eix"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Z6d-XB-Tl5" firstAttribute="centerX" secondItem="8Hk-Qp-sMK" secondAttribute="centerX" id="MRp-Pq-EBz"/>
+                                                    <constraint firstItem="Z6d-XB-Tl5" firstAttribute="height" secondItem="8Hk-Qp-sMK" secondAttribute="height" multiplier="0.8" id="Xhi-Fq-Lb7"/>
+                                                    <constraint firstItem="Z6d-XB-Tl5" firstAttribute="centerY" secondItem="8Hk-Qp-sMK" secondAttribute="centerY" id="fbK-p2-mGm"/>
+                                                    <constraint firstItem="Z6d-XB-Tl5" firstAttribute="width" secondItem="8Hk-Qp-sMK" secondAttribute="width" id="fla-pS-hwk"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fT-CK-sZJ">
+                                                <rect key="frame" x="0.0" y="148.5" width="341" height="74"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdY-ro-eSM">
+                                                        <rect key="frame" x="0.0" y="7.5" width="341" height="59"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                        <state key="normal" title="Button" backgroundImage="cie - pergunta">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="pressionadoCiencia:" destination="GRM-Fd-i6D" eventType="touchUpInside" id="ch7-6D-gy8"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="MdY-ro-eSM" firstAttribute="centerX" secondItem="2fT-CK-sZJ" secondAttribute="centerX" id="1Xn-Ds-p3G"/>
+                                                    <constraint firstItem="MdY-ro-eSM" firstAttribute="width" secondItem="2fT-CK-sZJ" secondAttribute="width" id="83B-Gv-HTD"/>
+                                                    <constraint firstItem="MdY-ro-eSM" firstAttribute="height" secondItem="2fT-CK-sZJ" secondAttribute="height" multiplier="0.8" id="UCi-xf-z2D"/>
+                                                    <constraint firstItem="MdY-ro-eSM" firstAttribute="centerY" secondItem="2fT-CK-sZJ" secondAttribute="centerY" id="onb-Xa-a0f"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYm-la-bxK">
+                                                <rect key="frame" x="0.0" y="222.5" width="341" height="74.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1o-xD-YRi">
+                                                        <rect key="frame" x="0.0" y="7.5" width="341" height="59.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                        <state key="normal" title="Button" backgroundImage="cie - pergunta">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="pressionadoCiencia:" destination="GRM-Fd-i6D" eventType="touchUpInside" id="hYq-Xc-GYI"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="r1o-xD-YRi" firstAttribute="height" secondItem="TYm-la-bxK" secondAttribute="height" multiplier="0.8" id="Gt0-IP-pV1"/>
+                                                    <constraint firstItem="r1o-xD-YRi" firstAttribute="width" secondItem="TYm-la-bxK" secondAttribute="width" id="Meo-TF-9YJ"/>
+                                                    <constraint firstItem="r1o-xD-YRi" firstAttribute="centerX" secondItem="TYm-la-bxK" secondAttribute="centerX" id="Teh-c4-bZY"/>
+                                                    <constraint firstItem="r1o-xD-YRi" firstAttribute="centerY" secondItem="TYm-la-bxK" secondAttribute="centerY" id="nMu-xx-MzT"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ufp-b6-qNR">
+                                                <rect key="frame" x="0.0" y="297" width="341" height="74"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xx-1f-Vrf">
+                                                        <rect key="frame" x="34" y="11" width="273" height="59.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <state key="normal" title="Próxima Pergunta!" backgroundImage="cie - proxima pergunta">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="proximaCiencia:" destination="GRM-Fd-i6D" eventType="touchUpInside" id="eZb-9J-Cbn"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="8Xx-1f-Vrf" firstAttribute="centerY" secondItem="Ufp-b6-qNR" secondAttribute="centerY" multiplier="1.1" id="DlL-74-1RF"/>
+                                                    <constraint firstItem="8Xx-1f-Vrf" firstAttribute="width" secondItem="Ufp-b6-qNR" secondAttribute="width" multiplier="0.8" id="HQL-Yq-hjv"/>
+                                                    <constraint firstItem="8Xx-1f-Vrf" firstAttribute="centerX" secondItem="Ufp-b6-qNR" secondAttribute="centerX" id="hY6-Tw-aVd"/>
+                                                    <constraint firstItem="8Xx-1f-Vrf" firstAttribute="height" secondItem="Ufp-b6-qNR" secondAttribute="height" multiplier="0.8" id="he0-5p-LJa"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LYs-6A-7p5" firstAttribute="centerX" secondItem="tW3-hP-G20" secondAttribute="centerX" id="c99-gO-bKP"/>
+                                    <constraint firstItem="LYs-6A-7p5" firstAttribute="width" secondItem="tW3-hP-G20" secondAttribute="width" id="phw-e1-zuT"/>
+                                    <constraint firstItem="LYs-6A-7p5" firstAttribute="height" secondItem="tW3-hP-G20" secondAttribute="height" multiplier="0.88" id="uET-hm-Vp7"/>
+                                    <constraint firstItem="LYs-6A-7p5" firstAttribute="centerY" secondItem="tW3-hP-G20" secondAttribute="centerY" id="wLU-dq-Vxd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quais desses momentos da história do Brasil não aconteceu em São Paulo?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QJ3-r9-6Ut">
+                                <rect key="frame" x="27" y="133.5" width="360" height="108.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZQ-uT-Kud">
+                                <rect key="frame" x="138" y="43" width="138" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8F-ah-ax0">
+                                        <rect key="frame" x="61" y="3" width="16" height="53"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCn-sl-WMg">
+                                        <rect key="frame" x="9" y="12" width="51" height="36"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ak-mG-iB1">
+                                        <rect key="frame" x="65.5" y="12" width="62" height="36"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eCn-sl-WMg" firstAttribute="width" secondItem="wZQ-uT-Kud" secondAttribute="height" multiplier="17:20" id="1hf-PL-Gt5"/>
+                                    <constraint firstItem="T8F-ah-ax0" firstAttribute="centerX" secondItem="wZQ-uT-Kud" secondAttribute="centerX" id="5gy-ch-LDe"/>
+                                    <constraint firstItem="0ak-mG-iB1" firstAttribute="centerY" secondItem="wZQ-uT-Kud" secondAttribute="centerY" id="6Zz-Qy-wi0"/>
+                                    <constraint firstItem="eCn-sl-WMg" firstAttribute="centerX" secondItem="wZQ-uT-Kud" secondAttribute="centerX" multiplier="0.5" id="ObO-uQ-HoT"/>
+                                    <constraint firstItem="0ak-mG-iB1" firstAttribute="centerX" secondItem="wZQ-uT-Kud" secondAttribute="centerX" multiplier="1.4" id="Zko-4D-B2B"/>
+                                    <constraint firstItem="T8F-ah-ax0" firstAttribute="width" secondItem="wZQ-uT-Kud" secondAttribute="height" multiplier="4:15" id="aRl-fj-iab"/>
+                                    <constraint firstItem="0ak-mG-iB1" firstAttribute="width" secondItem="wZQ-uT-Kud" secondAttribute="height" multiplier="31:30" id="gjl-88-V2C"/>
+                                    <constraint firstItem="eCn-sl-WMg" firstAttribute="centerY" secondItem="wZQ-uT-Kud" secondAttribute="centerY" id="hD9-ZD-6EZ"/>
+                                    <constraint firstItem="T8F-ah-ax0" firstAttribute="centerY" secondItem="wZQ-uT-Kud" secondAttribute="centerY" id="pyY-Bh-t2M"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wZQ-uT-Kud" firstAttribute="width" secondItem="HSf-rr-vgQ" secondAttribute="height" multiplier="69:404" id="17r-V6-GDm"/>
+                            <constraint firstItem="QJ3-r9-6Ut" firstAttribute="centerY" secondItem="tpx-bv-yhP" secondAttribute="centerY" multiplier="0.82" id="4D7-JY-JRh"/>
+                            <constraint firstItem="wZQ-uT-Kud" firstAttribute="centerX" secondItem="FcW-ok-wKU" secondAttribute="centerX" id="5wa-PG-f87"/>
+                            <constraint firstItem="tW3-hP-G20" firstAttribute="centerX" secondItem="FcW-ok-wKU" secondAttribute="centerX" id="7DF-jR-kLK"/>
+                            <constraint firstItem="bA1-uK-1bu" firstAttribute="height" secondItem="HSf-rr-vgQ" secondAttribute="height" multiplier="1.02" id="IPI-dz-Izf"/>
+                            <constraint firstItem="tpx-bv-yhP" firstAttribute="centerX" secondItem="FcW-ok-wKU" secondAttribute="centerX" id="IYh-Dp-ePX"/>
+                            <constraint firstItem="QJ3-r9-6Ut" firstAttribute="height" secondItem="tpx-bv-yhP" secondAttribute="height" multiplier="0.96" id="LPZ-M8-G5b"/>
+                            <constraint firstItem="wZQ-uT-Kud" firstAttribute="top" secondItem="FcW-ok-wKU" secondAttribute="top" constant="43" id="Nmy-su-XoT"/>
+                            <constraint firstItem="QJ3-r9-6Ut" firstAttribute="centerX" secondItem="tpx-bv-yhP" secondAttribute="centerX" id="Qsb-yT-vQ9"/>
+                            <constraint firstItem="XrH-RE-LWe" firstAttribute="centerX" secondItem="FcW-ok-wKU" secondAttribute="centerX" id="S1z-e5-5Tc"/>
+                            <constraint firstItem="QJ3-r9-6Ut" firstAttribute="width" secondItem="tpx-bv-yhP" secondAttribute="width" id="S3N-gd-Wyc"/>
+                            <constraint firstItem="bA1-uK-1bu" firstAttribute="centerY" secondItem="HSf-rr-vgQ" secondAttribute="centerY" id="UW9-GA-r45"/>
+                            <constraint firstItem="FcW-ok-wKU" firstAttribute="bottom" secondItem="wZQ-uT-Kud" secondAttribute="bottom" constant="622" id="VA5-Fx-AmY"/>
+                            <constraint firstItem="XrH-RE-LWe" firstAttribute="centerY" secondItem="FcW-ok-wKU" secondAttribute="centerY" multiplier="0.4" id="Vfe-Vd-FgZ"/>
+                            <constraint firstItem="bA1-uK-1bu" firstAttribute="width" secondItem="HSf-rr-vgQ" secondAttribute="width" multiplier="1.02" id="bKG-IM-kxA"/>
+                            <constraint firstItem="XrH-RE-LWe" firstAttribute="height" secondItem="HSf-rr-vgQ" secondAttribute="height" multiplier="0.35" id="cxE-Bf-Uaq"/>
+                            <constraint firstItem="tW3-hP-G20" firstAttribute="width" secondItem="XrH-RE-LWe" secondAttribute="width" id="dpl-5W-qix"/>
+                            <constraint firstItem="tW3-hP-G20" firstAttribute="top" secondItem="tpx-bv-yhP" secondAttribute="bottom" multiplier="0.94" id="giY-JG-EIy"/>
+                            <constraint firstItem="bA1-uK-1bu" firstAttribute="centerX" secondItem="HSf-rr-vgQ" secondAttribute="centerX" id="hMw-jv-yiE"/>
+                            <constraint firstItem="FcW-ok-wKU" firstAttribute="bottom" secondItem="tW3-hP-G20" secondAttribute="bottom" multiplier="1.05" id="pvh-iv-Hts"/>
+                            <constraint firstItem="tpx-bv-yhP" firstAttribute="centerY" secondItem="XrH-RE-LWe" secondAttribute="bottom" multiplier="0.8" id="u6A-4x-uSF"/>
+                            <constraint firstItem="tpx-bv-yhP" firstAttribute="height" secondItem="XrH-RE-LWe" secondAttribute="height" multiplier="0.4" id="v9N-hB-SJ2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FcW-ok-wKU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ciência" id="QdT-0L-WnM"/>
+                    <connections>
+                        <outlet property="acerto2" destination="eCn-sl-WMg" id="sjR-FC-nte"/>
+                        <outlet property="button1" destination="Ey6-vc-0Xr" id="QJo-B2-JDw"/>
+                        <outlet property="button2" destination="Z6d-XB-Tl5" id="l7v-DI-I6J"/>
+                        <outlet property="button3" destination="MdY-ro-eSM" id="6YR-d3-cln"/>
+                        <outlet property="button4" destination="r1o-xD-YRi" id="Oq1-b3-uOD"/>
+                        <outlet property="imgPergunta" destination="XrH-RE-LWe" id="YGq-in-lfh"/>
+                        <outlet property="proximaPergunta" destination="8Xx-1f-Vrf" id="nhE-GX-Bxy"/>
+                        <outlet property="total2" destination="0ak-mG-iB1" id="KFR-W9-g6Z"/>
+                        <outlet property="txtPergunta" destination="QJ3-r9-6Ut" id="xKx-bC-cuw"/>
+                        <outletCollection property="button" destination="Ey6-vc-0Xr" collectionClass="NSMutableArray" id="IKn-wp-xse"/>
+                        <outletCollection property="button" destination="Z6d-XB-Tl5" collectionClass="NSMutableArray" id="AGb-kP-IU1"/>
+                        <outletCollection property="button" destination="MdY-ro-eSM" collectionClass="NSMutableArray" id="Paj-KJ-yLg"/>
+                        <outletCollection property="button" destination="r1o-xD-YRi" collectionClass="NSMutableArray" id="lyB-QP-rUG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1E7-nq-iXT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1856.521739130435" y="853.79464285714278"/>
+        </scene>
+        <!--Ciência View Controller-->
+        <scene sceneID="6Xp-z9-BRs">
+            <objects>
+                <viewController id="Tpw-hI-XUE" userLabel="Ciência View Controller" customClass="ViewController" customModule="HistoryBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fsa-an-j23">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Ultron" image="fundo" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZ2-SW-w6w">
+                                <rect key="frame" x="-4" y="-8" width="422" height="824"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WMb-e6-Vc6">
+                                <rect key="frame" x="36.5" y="-69" width="341" height="283"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WMb-e6-Vc6" secondAttribute="height" multiplier="76:63" id="HiF-Dl-KsZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo texto" translatesAutoresizingMaskIntoConstraints="NO" id="rxd-ac-rAA">
+                                <rect key="frame" x="27" y="157.5" width="360" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rxd-ac-rAA" secondAttribute="height" multiplier="1536:482" id="Cf7-1V-AZb"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sls-Be-9M2">
+                                <rect key="frame" x="36.5" y="254" width="341" height="436.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kAQ-Kj-6zO">
+                                        <rect key="frame" x="0.0" y="26.5" width="341" height="384"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRe-i5-Fky">
+                                                <rect key="frame" x="0.0" y="0.0" width="341" height="76.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaM-Pz-Iuh">
+                                                        <rect key="frame" x="0.0" y="7.5" width="341" height="61.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                        <state key="normal" title="Button" backgroundImage="hist pergunta">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="respostaApertada:" destination="Tpw-hI-XUE" eventType="touchUpInside" id="w7P-nZ-TcE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="yaM-Pz-Iuh" firstAttribute="width" secondItem="ZRe-i5-Fky" secondAttribute="width" id="GnW-m4-sSD"/>
+                                                    <constraint firstItem="yaM-Pz-Iuh" firstAttribute="centerX" secondItem="ZRe-i5-Fky" secondAttribute="centerX" id="LP7-kB-UQH"/>
+                                                    <constraint firstItem="yaM-Pz-Iuh" firstAttribute="height" secondItem="ZRe-i5-Fky" secondAttribute="height" multiplier="0.8" id="fin-T5-Uvi"/>
+                                                    <constraint firstItem="yaM-Pz-Iuh" firstAttribute="centerY" secondItem="ZRe-i5-Fky" secondAttribute="centerY" id="yCM-Pe-dGM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXk-Yg-kdQ">
+                                                <rect key="frame" x="0.0" y="76.5" width="341" height="77"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1q1-I0-q7W">
+                                                        <rect key="frame" x="0.0" y="8" width="341" height="61.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                        <state key="normal" title="Button" backgroundImage="hist pergunta">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="respostaApertada:" destination="Tpw-hI-XUE" eventType="touchUpInside" id="Giw-sI-dyE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="1q1-I0-q7W" firstAttribute="width" secondItem="NXk-Yg-kdQ" secondAttribute="width" id="N4L-P2-Xbq"/>
+                                                    <constraint firstItem="1q1-I0-q7W" firstAttribute="height" secondItem="NXk-Yg-kdQ" secondAttribute="height" multiplier="0.8" id="eOc-b6-gBp"/>
+                                                    <constraint firstItem="1q1-I0-q7W" firstAttribute="centerY" secondItem="NXk-Yg-kdQ" secondAttribute="centerY" id="gXv-nF-pjr"/>
+                                                    <constraint firstItem="1q1-I0-q7W" firstAttribute="centerX" secondItem="NXk-Yg-kdQ" secondAttribute="centerX" id="sNG-gV-2S8"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPB-nJ-CaP">
+                                                <rect key="frame" x="0.0" y="153.5" width="341" height="76.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiU-Oq-pBW">
+                                                        <rect key="frame" x="0.0" y="7.5" width="341" height="61.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                        <state key="normal" title="Button" backgroundImage="hist pergunta">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="respostaApertada:" destination="Tpw-hI-XUE" eventType="touchUpInside" id="Vjj-Rw-B1v"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="BiU-Oq-pBW" firstAttribute="width" secondItem="SPB-nJ-CaP" secondAttribute="width" id="aqh-Bp-6g3"/>
+                                                    <constraint firstItem="BiU-Oq-pBW" firstAttribute="centerY" secondItem="SPB-nJ-CaP" secondAttribute="centerY" id="dO0-ZF-FHC"/>
+                                                    <constraint firstItem="BiU-Oq-pBW" firstAttribute="centerX" secondItem="SPB-nJ-CaP" secondAttribute="centerX" id="vjw-2G-oLC"/>
+                                                    <constraint firstItem="BiU-Oq-pBW" firstAttribute="height" secondItem="SPB-nJ-CaP" secondAttribute="height" multiplier="0.8" id="xdd-Lw-Vwp"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0G-Ht-Ijz">
+                                                <rect key="frame" x="0.0" y="230" width="341" height="77"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ez1-Mm-Kqv">
+                                                        <rect key="frame" x="0.0" y="8" width="341" height="61.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                        <state key="normal" title="Button" backgroundImage="hist pergunta">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="respostaApertada:" destination="Tpw-hI-XUE" eventType="touchUpInside" id="5L9-OS-QgB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Ez1-Mm-Kqv" firstAttribute="centerY" secondItem="b0G-Ht-Ijz" secondAttribute="centerY" id="6hK-ki-8dl"/>
+                                                    <constraint firstItem="Ez1-Mm-Kqv" firstAttribute="centerX" secondItem="b0G-Ht-Ijz" secondAttribute="centerX" id="A9f-zY-YMX"/>
+                                                    <constraint firstItem="Ez1-Mm-Kqv" firstAttribute="width" secondItem="b0G-Ht-Ijz" secondAttribute="width" id="bHH-BL-huR"/>
+                                                    <constraint firstItem="Ez1-Mm-Kqv" firstAttribute="height" secondItem="b0G-Ht-Ijz" secondAttribute="height" multiplier="0.8" id="bSF-xa-TED"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUr-9X-IgU">
+                                                <rect key="frame" x="0.0" y="307" width="341" height="77"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rL8-1x-PHf">
+                                                        <rect key="frame" x="34" y="11.5" width="273" height="61.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <state key="normal" title="Próxima Pergunta!" backgroundImage="hist - proxima pergunta">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="proxima:" destination="Tpw-hI-XUE" eventType="touchUpInside" id="sqt-k4-BPB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="rL8-1x-PHf" firstAttribute="centerY" secondItem="hUr-9X-IgU" secondAttribute="centerY" multiplier="1.1" id="2PF-8D-HMQ"/>
+                                                    <constraint firstItem="rL8-1x-PHf" firstAttribute="centerX" secondItem="hUr-9X-IgU" secondAttribute="centerX" id="WBh-MJ-b6u"/>
+                                                    <constraint firstItem="rL8-1x-PHf" firstAttribute="width" secondItem="hUr-9X-IgU" secondAttribute="width" multiplier="0.8" id="aLL-wh-qti"/>
+                                                    <constraint firstItem="rL8-1x-PHf" firstAttribute="height" secondItem="hUr-9X-IgU" secondAttribute="height" multiplier="0.8" id="cXT-WF-jIY"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kAQ-Kj-6zO" firstAttribute="centerY" secondItem="Sls-Be-9M2" secondAttribute="centerY" id="7Hy-8T-QlO"/>
+                                    <constraint firstItem="kAQ-Kj-6zO" firstAttribute="width" secondItem="Sls-Be-9M2" secondAttribute="width" id="FKh-0S-d57"/>
+                                    <constraint firstItem="kAQ-Kj-6zO" firstAttribute="centerX" secondItem="Sls-Be-9M2" secondAttribute="centerX" id="NHz-u5-xs7"/>
+                                    <constraint firstItem="kAQ-Kj-6zO" firstAttribute="height" secondItem="Sls-Be-9M2" secondAttribute="height" multiplier="0.88" id="f33-yw-26q"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quais desses momentos da história do Brasil não aconteceu em São Paulo?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ho3-w4-ww7">
+                                <rect key="frame" x="55.5" y="171" width="303" height="86"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJg-Z5-BvY">
+                                <rect key="frame" x="141" y="68" width="132" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR3-kE-CG0">
+                                        <rect key="frame" x="60.5" y="2.5" width="11.5" height="36"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fZ-Qt-Ngc">
+                                        <rect key="frame" x="70" y="2.5" width="44.5" height="36"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRa-nt-CNW">
+                                        <rect key="frame" x="21.5" y="2.5" width="36.5" height="36"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4fZ-Qt-Ngc" firstAttribute="centerY" secondItem="JJg-Z5-BvY" secondAttribute="centerY" id="0bV-iW-KnJ"/>
+                                    <constraint firstItem="cR3-kE-CG0" firstAttribute="width" secondItem="JJg-Z5-BvY" secondAttribute="height" multiplier="16:57" id="F8O-1K-nbU"/>
+                                    <constraint firstItem="RRa-nt-CNW" firstAttribute="centerX" secondItem="JJg-Z5-BvY" secondAttribute="centerX" multiplier="0.6" id="GqW-SP-aEe"/>
+                                    <constraint firstItem="4fZ-Qt-Ngc" firstAttribute="centerX" secondItem="JJg-Z5-BvY" secondAttribute="centerX" multiplier="1.4" id="IhN-UR-wgU"/>
+                                    <constraint firstItem="4fZ-Qt-Ngc" firstAttribute="width" secondItem="JJg-Z5-BvY" secondAttribute="height" multiplier="62:57" id="Tbn-h8-HtS"/>
+                                    <constraint firstItem="RRa-nt-CNW" firstAttribute="centerY" secondItem="JJg-Z5-BvY" secondAttribute="centerY" id="WjD-kl-yYW"/>
+                                    <constraint firstItem="cR3-kE-CG0" firstAttribute="centerY" secondItem="JJg-Z5-BvY" secondAttribute="centerY" id="XPO-Io-ANL"/>
+                                    <constraint firstItem="cR3-kE-CG0" firstAttribute="centerX" secondItem="JJg-Z5-BvY" secondAttribute="centerX" id="pcr-Z1-7XH"/>
+                                    <constraint firstItem="RRa-nt-CNW" firstAttribute="width" secondItem="JJg-Z5-BvY" secondAttribute="height" multiplier="17:19" id="rhj-kM-X0o"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31h-8j-WU0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SFf-Nl-xXr">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <color key="backgroundColor" red="0.98039215686274506" green="0.95294117647058818" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0q-xX-Zlh">
+                                        <rect key="frame" x="32.5" y="413.5" width="349" height="142.5"/>
+                                        <string key="text">Bem vindo(a) ao Cérebro-Quiz, aqui você poderá praticar seus conhecimentos em história, ciência e tecnologia. Uma dica legal é, todos os dias responda algumas perguntas, quando sobrar um tempinho!   Aproveite! </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ativo 1" translatesAutoresizingMaskIntoConstraints="NO" id="4nx-wR-8RC">
+                                        <rect key="frame" x="32.5" y="194" width="349" height="16"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPO-Um-lxm">
+                                        <rect key="frame" x="73.5" y="594.5" width="267" height="71.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Jogar!" backgroundImage="Ativo 3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tutorial:" destination="Tpw-hI-XUE" eventType="touchUpInside" id="L6m-RU-T9o"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="SFf-Nl-xXr" firstAttribute="width" secondItem="31h-8j-WU0" secondAttribute="width" id="0Bd-rT-Cp3"/>
+                                    <constraint firstItem="HPO-Um-lxm" firstAttribute="width" secondItem="31h-8j-WU0" secondAttribute="height" multiplier="267:808" id="1rE-Jz-T9V"/>
+                                    <constraint firstItem="4nx-wR-8RC" firstAttribute="centerX" secondItem="31h-8j-WU0" secondAttribute="centerX" id="Dkl-aI-x17"/>
+                                    <constraint firstItem="k0q-xX-Zlh" firstAttribute="centerX" secondItem="31h-8j-WU0" secondAttribute="centerX" id="Dve-kd-fDG"/>
+                                    <constraint firstItem="HPO-Um-lxm" firstAttribute="centerY" secondItem="31h-8j-WU0" secondAttribute="centerY" multiplier="1.56" id="IXC-GG-DTV"/>
+                                    <constraint firstItem="k0q-xX-Zlh" firstAttribute="centerY" secondItem="31h-8j-WU0" secondAttribute="centerY" multiplier="1.2" id="JgV-4O-Qsi"/>
+                                    <constraint firstItem="SFf-Nl-xXr" firstAttribute="centerX" secondItem="31h-8j-WU0" secondAttribute="centerX" id="KTV-mv-Sjb"/>
+                                    <constraint firstItem="k0q-xX-Zlh" firstAttribute="width" secondItem="31h-8j-WU0" secondAttribute="height" multiplier="349:808" id="QEy-pF-PSQ"/>
+                                    <constraint firstItem="4nx-wR-8RC" firstAttribute="centerY" secondItem="31h-8j-WU0" secondAttribute="centerY" multiplier="0.5" id="ToO-Aw-QjN"/>
+                                    <constraint firstItem="4nx-wR-8RC" firstAttribute="width" secondItem="31h-8j-WU0" secondAttribute="height" multiplier="349:808" id="VU6-T0-fpy"/>
+                                    <constraint firstItem="HPO-Um-lxm" firstAttribute="centerX" secondItem="31h-8j-WU0" secondAttribute="centerX" id="aDm-vb-axH"/>
+                                    <constraint firstAttribute="bottom" secondItem="HPO-Um-lxm" secondAttribute="bottom" constant="142" id="dhI-fO-BDD"/>
+                                    <constraint firstItem="SFf-Nl-xXr" firstAttribute="centerY" secondItem="31h-8j-WU0" secondAttribute="centerY" id="eG4-pj-IGe"/>
+                                    <constraint firstItem="SFf-Nl-xXr" firstAttribute="height" secondItem="31h-8j-WU0" secondAttribute="height" id="f42-l9-X0Y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ho3-w4-ww7" firstAttribute="height" secondItem="rxd-ac-rAA" secondAttribute="height" multiplier="0.76" id="2uY-in-jSB"/>
+                            <constraint firstItem="JJg-Z5-BvY" firstAttribute="centerX" secondItem="Ygd-KU-93z" secondAttribute="centerX" id="33S-lT-U0I"/>
+                            <constraint firstItem="JJg-Z5-BvY" firstAttribute="width" secondItem="Fsa-an-j23" secondAttribute="height" multiplier="33:202" id="4T8-X9-Axn"/>
+                            <constraint firstItem="CZ2-SW-w6w" firstAttribute="width" secondItem="Fsa-an-j23" secondAttribute="width" multiplier="1.02" id="Bnx-gL-IjD"/>
+                            <constraint firstItem="JJg-Z5-BvY" firstAttribute="top" secondItem="WMb-e6-Vc6" secondAttribute="bottom" constant="-146" id="IGO-kk-TaT"/>
+                            <constraint firstItem="WMb-e6-Vc6" firstAttribute="height" secondItem="Fsa-an-j23" secondAttribute="height" multiplier="0.35" id="IiN-qg-1oI"/>
+                            <constraint firstItem="Sls-Be-9M2" firstAttribute="centerX" secondItem="Ygd-KU-93z" secondAttribute="centerX" id="JzB-Wf-kQq"/>
+                            <constraint firstItem="Ho3-w4-ww7" firstAttribute="centerX" secondItem="rxd-ac-rAA" secondAttribute="centerX" id="Kaf-72-i3C"/>
+                            <constraint firstItem="Ho3-w4-ww7" firstAttribute="width" secondItem="rxd-ac-rAA" secondAttribute="width" multiplier="0.84" id="Kdq-IG-fHN"/>
+                            <constraint firstItem="CZ2-SW-w6w" firstAttribute="centerY" secondItem="Fsa-an-j23" secondAttribute="centerY" id="MAL-MK-jWz"/>
+                            <constraint firstItem="Ho3-w4-ww7" firstAttribute="centerY" secondItem="rxd-ac-rAA" secondAttribute="centerY" id="NYo-z6-9Zv"/>
+                            <constraint firstItem="31h-8j-WU0" firstAttribute="top" secondItem="Ygd-KU-93z" secondAttribute="top" id="QaK-RB-hyK"/>
+                            <constraint firstItem="CZ2-SW-w6w" firstAttribute="centerX" secondItem="Fsa-an-j23" secondAttribute="centerX" id="Sra-XE-uhT"/>
+                            <constraint firstAttribute="bottom" secondItem="31h-8j-WU0" secondAttribute="bottom" id="THH-nV-ioN"/>
+                            <constraint firstItem="Sls-Be-9M2" firstAttribute="top" secondItem="rxd-ac-rAA" secondAttribute="bottom" multiplier="0.94" id="ZRs-8W-KS6"/>
+                            <constraint firstItem="Sls-Be-9M2" firstAttribute="width" secondItem="WMb-e6-Vc6" secondAttribute="width" id="cvG-SB-MZk"/>
+                            <constraint firstItem="WMb-e6-Vc6" firstAttribute="centerY" secondItem="Ygd-KU-93z" secondAttribute="centerY" multiplier="0.2" id="dx7-P2-XTb"/>
+                            <constraint firstItem="31h-8j-WU0" firstAttribute="trailing" secondItem="Ygd-KU-93z" secondAttribute="trailing" id="eih-rE-avg"/>
+                            <constraint firstItem="rxd-ac-rAA" firstAttribute="height" secondItem="WMb-e6-Vc6" secondAttribute="height" multiplier="0.4" id="ew5-Ph-lJV"/>
+                            <constraint firstItem="rxd-ac-rAA" firstAttribute="centerX" secondItem="Ygd-KU-93z" secondAttribute="centerX" id="ewe-sU-uOG"/>
+                            <constraint firstItem="Ygd-KU-93z" firstAttribute="bottom" secondItem="Sls-Be-9M2" secondAttribute="bottom" multiplier="1.05" id="lIg-qN-goY"/>
+                            <constraint firstItem="WMb-e6-Vc6" firstAttribute="centerX" secondItem="Ygd-KU-93z" secondAttribute="centerX" id="mpG-xc-RZf"/>
+                            <constraint firstItem="CZ2-SW-w6w" firstAttribute="height" secondItem="Fsa-an-j23" secondAttribute="height" multiplier="1.02" id="qXa-Qo-Y0F"/>
+                            <constraint firstItem="rxd-ac-rAA" firstAttribute="centerY" secondItem="WMb-e6-Vc6" secondAttribute="bottom" id="rUP-T1-7Yl"/>
+                            <constraint firstItem="31h-8j-WU0" firstAttribute="leading" secondItem="Ygd-KU-93z" secondAttribute="leading" id="yci-nv-aJx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ygd-KU-93z"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="História " id="dyx-rl-N6K"/>
+                    <connections>
+                        <outlet property="acertos" destination="RRa-nt-CNW" id="BFu-u6-UXM"/>
+                        <outlet property="button1" destination="yaM-Pz-Iuh" id="vby-jB-jrl"/>
+                        <outlet property="button2" destination="1q1-I0-q7W" id="4a4-hL-nha"/>
+                        <outlet property="button3" destination="BiU-Oq-pBW" id="1FS-M5-Lcn"/>
+                        <outlet property="button4" destination="Ez1-Mm-Kqv" id="XoA-3K-bgA"/>
+                        <outlet property="buttonTutorial" destination="HPO-Um-lxm" id="YnC-cM-m3T"/>
+                        <outlet property="fundoTutorial" destination="SFf-Nl-xXr" id="W3U-d0-pdl"/>
+                        <outlet property="imgPergunta" destination="WMb-e6-Vc6" id="vEF-zE-CFG"/>
+                        <outlet property="imgTutorial" destination="4nx-wR-8RC" id="GDX-V0-Eoc"/>
+                        <outlet property="proximaPergunta" destination="rL8-1x-PHf" id="aXf-bK-kVU"/>
+                        <outlet property="total" destination="4fZ-Qt-Ngc" id="sue-s9-xfe"/>
+                        <outlet property="txtPergunta" destination="Ho3-w4-ww7" id="8gw-W5-aLs"/>
+                        <outlet property="txtTutorial" destination="k0q-xX-Zlh" id="Tzb-V0-byT"/>
+                        <outlet property="viewTutorial" destination="31h-8j-WU0" id="vEh-m3-yYx"/>
+                        <outletCollection property="button" destination="yaM-Pz-Iuh" collectionClass="NSMutableArray" id="CAx-UN-9YK"/>
+                        <outletCollection property="button" destination="1q1-I0-q7W" collectionClass="NSMutableArray" id="VBc-wD-9az"/>
+                        <outletCollection property="button" destination="BiU-Oq-pBW" collectionClass="NSMutableArray" id="OA2-2V-ftj"/>
+                        <outletCollection property="button" destination="Ez1-Mm-Kqv" collectionClass="NSMutableArray" id="a6A-HB-4vE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZv-xR-v9v" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1856.521739130435" y="126.5625"/>
+        </scene>
+        <!--Mais Questoes2 View Controller-->
+        <scene sceneID="6y7-LG-GP3">
+            <objects>
+                <viewController storyboardIdentifier="maisQuestoes2" id="d6V-Ch-eGc" customClass="MaisQuestoes2ViewController" customModule="HistoryBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HIG-dN-F8O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="bkD-dx-9sU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyk-6f-ETu">
+                                <rect key="frame" x="34" y="583" width="338" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Responder novamente" backgroundImage="hist - proxima pergunta">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset2:" destination="d6V-Ch-eGc" eventType="touchUpInside" id="bxr-dD-L6Z"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo texto" translatesAutoresizingMaskIntoConstraints="NO" id="afs-LE-2pf">
+                                <rect key="frame" x="16" y="243" width="383" height="330"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Você terminou as questões!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GA4-kc-vGR">
+                                <rect key="frame" x="57" y="290" width="298" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Até o momento você acertou:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uP-P7-Uod">
+                                <rect key="frame" x="75" y="319" width="263" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uO4-Qs-2Fk">
+                                <rect key="frame" x="75" y="382" width="263" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Mas não se preocupe, toda semana novas perguntas serão colocadas no Quiz. Você pode esperar por mais, ou pode respondê-las novamente!   Divirtasse! </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OV4-1x-wjx">
+                                <rect key="frame" x="197" y="340" width="16" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WA-QI-qRE">
+                                <rect key="frame" x="142" y="340" width="51.5" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5d-af-dFI">
+                                <rect key="frame" x="211" y="340" width="62.5" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Hv0-yr-KZL"/>
+                    </view>
+                    <connections>
+                        <outlet property="acerto" destination="4WA-QI-qRE" id="FJi-OY-pCn"/>
+                        <outlet property="button2" destination="Cyk-6f-ETu" id="7x3-Ql-lE2"/>
+                        <outlet property="total" destination="S5d-af-dFI" id="Nfz-CV-R4I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afA-jZ-ZLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2679.7101449275365" y="126.5625"/>
+        </scene>
+        <!--Mais Questoes View Controller-->
+        <scene sceneID="Imw-YM-qe8">
+            <objects>
+                <viewController storyboardIdentifier="maisQuestoes" id="bDs-te-aEs" customClass="MaisQuestoesViewController" customModule="HistoryBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lem-bn-Oxf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo cien" translatesAutoresizingMaskIntoConstraints="NO" id="uyr-8E-2xG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVT-j6-1eM">
+                                <rect key="frame" x="33" y="540" width="348" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Responder novamente" backgroundImage="cie - proxima pergunta">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="bDs-te-aEs" eventType="touchUpInside" id="f0N-74-ojT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Até o momento você acertou:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzg-es-z3X">
+                                <rect key="frame" x="76" y="325" width="263" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKf-hl-jgQ">
+                                <rect key="frame" x="197" y="346" width="16" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0so-kK-7Io">
+                                <rect key="frame" x="142" y="346" width="51.5" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUD-t0-1d2">
+                                <rect key="frame" x="211" y="346" width="62.5" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaG-Xj-57V">
+                                <rect key="frame" x="58" y="386" width="298" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Mas não se preocupe, toda semana novas perguntas serão colocadas no Quiz. Você pode esperar por mais, ou pode respondê-las novamente!   Divirtasse! </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Você terminou as questões!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8r-0a-nm2">
+                                <rect key="frame" x="58" y="280" width="298" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CuF-DL-xfs"/>
+                    </view>
+                    <connections>
+                        <outlet property="acerto2" destination="0so-kK-7Io" id="Ycl-cE-OUE"/>
+                        <outlet property="button" destination="SVT-j6-1eM" id="o1h-vg-hli"/>
+                        <outlet property="total2" destination="FUD-t0-1d2" id="Pv0-hm-bao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Utr-IF-3l3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2679.7101449275365" y="853.79464285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ativo 1" width="1544" height="1448"/>
+        <image name="Ativo 3" width="1543.5" height="346"/>
+        <image name="cie - pergunta" width="683" height="110"/>
+        <image name="cie - proxima pergunta" width="533.5" height="119"/>
+        <image name="cien" width="22.5" height="25.5"/>
+        <image name="fundo" width="832" height="1797"/>
+        <image name="fundo cien" width="828" height="1792"/>
+        <image name="fundo texto" width="765" height="341"/>
+        <image name="hisT" width="22.5" height="26"/>
+        <image name="hist - proxima pergunta" width="615" height="111"/>
+        <image name="hist pergunta" width="695" height="111"/>
+    </resources>
+</document>
