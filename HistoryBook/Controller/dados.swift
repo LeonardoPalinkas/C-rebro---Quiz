@@ -134,3 +134,6 @@ class DadosCiencia{
         self.perguntaAtualCiencias = UserDefaults.standard.integer(forKey: perguntaKey)
     }
 }
+
+
+//commit
