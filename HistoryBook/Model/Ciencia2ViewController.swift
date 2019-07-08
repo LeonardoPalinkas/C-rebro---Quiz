@@ -90,7 +90,6 @@ class Ciencia2ViewController: UIViewController {
             proximaPergunta.alpha = 1
             proximaPergunta.isEnabled = true
            
-            
             respondido = true
             DadosCiencia.shared.respondeu(pergunta: perguntaAtual, resposta: sender.tag)
             print(DadosCiencia.shared.resultado())
@@ -137,3 +136,6 @@ class Ciencia2ViewController: UIViewController {
         
       }
     }
+
+
+//bug
