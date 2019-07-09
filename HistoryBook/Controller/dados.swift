@@ -14,6 +14,7 @@ class DadosHistoria{
     static var shared = DadosHistoria()
     
     var perguntaKey = "perguntaGravada"
+    var acertokey2 = "acertoGravado2"
     
     var perguntasHistoria = [
         
@@ -28,14 +29,14 @@ class DadosHistoria{
         perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "9. Quantos anos durou a Guerra dos Cem Anos?", txtResposta: ["90 anos", "100 anos", "110 anos", "116 anos"], respostaCorreta: 3),
         perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "10.Qual o nome do famoso riacho onde foi proclamado a independência do Brasil?", txtResposta: ["Plácido", " Tietê", "Ipiranga", " Dilúvio"], respostaCorreta: 2),
         perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "11. Quem é o autor do Hino Nacional Brasileiro?", txtResposta: ["Castelo Branco", "Joaquim Silvério", "Joaquim Osório Duque Estrada", "Rui Barbosa"], respostaCorreta: 2),
-        perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "12. Quem é o autor do Hino Nacional Brasileiro?", txtResposta: ["Castelo Branco", "Joaquim Silvério", "Joaquim Osório Duque Estrada", "Rui Barbosa"], respostaCorreta: 2),
+        perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "12. Qual Presidente dos Estados Unidos foi assassinado por um ator sulista com um tiro na cabeça?", txtResposta: ["Thomas Jefferson", "John F. Kennedy", "Abraham Lincoln", "Gerald Ford   "], respostaCorreta: 2),
         perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "13. Qual foi a famosa revolução ocorrida no Rio Grande do Sul?", txtResposta: ["Revolução Farroupilha", "Revolução dos Pampas", "Revolução Gaúcha", "Revolução do Mate verde"], respostaCorreta: 0),
         perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "14. Quem descobriu o Brasil?", txtResposta: ["Cristóvão Colombo", "Pedro I", "Pedro Álvarez Cabral", " João VI"], respostaCorreta: 2),
-        perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "15. Quando foi proclamada a Independência do Brasil?", txtResposta: ["C15 de novembro de 1889", "12 de outubro de 1850", "11 de junho de 1890", " 7 de setembro de 1822"], respostaCorreta: 3),
+        perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "15. Quando foi proclamada a Independência do Brasil?", txtResposta: ["15 de novembro de 1889", "12 de outubro de 1850", "11 de junho de 1890", " 7 de setembro de 1822"], respostaCorreta: 3),
         perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "16. Qual é o nome da legislação brasileira responsável pela libertação dos escravos em 1888?", txtResposta: ["Lei Seca", "Lei Rósea", "Lei Aurea", "Lei do Ventre Livre"], respostaCorreta: 2),
         perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "17. Qual o nome do primeiro presidente da república?", txtResposta: ["Mal. Deodoro da Fonseca", "Mal. Floriano Peixoto", "Duque de Caxias", " Rui Barbosa"], respostaCorreta: 0),
         perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "18. Quando foi proclamada a república do Brasil?", txtResposta: ["15 de novembro de 1889", "25 de março de 1857", "14 de julho de 1789", " 12 de junho de 1840"], respostaCorreta: 0),
-        perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "19. De que ordem religiosa foram os primeiros catequista dos indígenas Brasileiros?", txtResposta: ["Franciscanos", "Jesuítas", "Beneditinos", "Carmelitas"], respostaCorreta: 0),
+        perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "19. De que ordem religiosa foram os primeiros catequista dos indígenas Brasileiros?", txtResposta: ["Franciscanos", "Jesuítas", "Beneditinos", "Carmelitas"], respostaCorreta: 1),
         perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "20. Os Estados Unidos teve um Presidente que foi ator de Hollywood. Quem foi ele?", txtResposta: ["George W. Bush", "Barack Obama", "Ronald Reagan", "Jimmy Carter"], respostaCorreta: 2),
         perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "21. Qual cientista famoso teve sua participação muito importante durante o processo de Independência dos Estados Unidos?", txtResposta: ["Thomas Edison", "Benjamin Franklin", "Isaac Newton", "John Dalton"], respostaCorreta: 1),
         perguntaHistoria (imgPergunta: "hist - pergunta8", txtPergunta: "22. Qual dos países abaixo presenteou os Estados Unidos com a famosa Estátua da Liberdade, por ter vencido uma batalha?", txtResposta: ["França", "Espanha", "Alemanha", "Inglaterra"], respostaCorreta: 0)
@@ -44,7 +45,11 @@ class DadosHistoria{
         
     ]
     
-    var numeroRespondidoCorretamente = 0
+    var numeroRespondidoCorretamente : Int {
+        didSet {
+            UserDefaults.standard.set(self.numeroRespondidoCorretamente, forKey: acertokey2)
+        }
+    }
     
     func respondeu(pergunta:perguntaHistoria, resposta:Int){
         if pergunta.respostaCorreta == resposta{
@@ -69,6 +74,7 @@ class DadosHistoria{
     
     private init (){
         self.perguntaAtualHistoria = UserDefaults.standard.integer(forKey: perguntaKey)
+        self.numeroRespondidoCorretamente = UserDefaults.standard.integer(forKey: acertokey2)
     }
 }
 
@@ -77,6 +83,7 @@ class DadosCiencia{
     static var shared = DadosCiencia()
     
     var perguntaKey = "perguntaGravada"
+    var acertoKey = "acertoGravado"
     
     var perguntasCiencias = [
         
@@ -107,7 +114,11 @@ class DadosCiencia{
         
     ]
     
-    var numeroRespondidoCorretamente = 0
+    var numeroRespondidoCorretamente :Int {
+        didSet {
+            UserDefaults.standard.set(self.numeroRespondidoCorretamente, forKey: acertoKey)
+        }
+    }
     
     func respondeu(pergunta:perguntaCiencias, resposta:Int){
         if pergunta.respostaCorreta == resposta{
@@ -124,6 +135,7 @@ class DadosCiencia{
     func resultado() -> (acertos2:Int,  total2:Int){
         
         return (acertos2: numeroRespondidoCorretamente, total2: perguntasCiencias.count)
+        
     }
     
     func proximaPergunta(){
@@ -132,8 +144,60 @@ class DadosCiencia{
     
     private init (){
         self.perguntaAtualCiencias = UserDefaults.standard.integer(forKey: perguntaKey)
+        self.numeroRespondidoCorretamente = UserDefaults.standard.integer(forKey: acertoKey)
     }
 }
 
+
+class DadosTecnologia{
+    
+    static var shared = DadosTecnologia()
+    
+    var perguntaKey3 = "perguntaGravada2"
+    var acertoKey3 = "acertoGravado2"
+    
+    var perguntasTecnologia = [
+        
+        perguntaTecnologia (imgPergunta: "cie - pergunta 1", txtPergunta: "1. Qual é o nome da galáxia em que se encontram a Terra e o nosso Sistema Solar?", txtResposta: ["Andrômeda", "Nuvem de Magalhães", "Via Láctea", "Nuvem de Oort"], respostaCorreta: 2),
+        perguntaTecnologia (imgPergunta: "cie - pergunta 1", txtPergunta: "1. Qual é o nome da galáxia em que se encontram a Terra e o nosso Sistema Solar?", txtResposta: ["Andrômeda", "Nuvem de Magalhães", "Via Láctea", "Nuvem de Oort"], respostaCorreta: 2),
+        perguntaTecnologia (imgPergunta: "cie - pergunta 1", txtPergunta: "1. Qual é o nome da galáxia em que se encontram a Terra e o nosso Sistema Solar?", txtResposta: ["Andrômeda", "Nuvem de Magalhães", "Via Láctea", "Nuvem de Oort"], respostaCorreta: 2),
+        perguntaTecnologia (imgPergunta: "cie - pergunta 1", txtPergunta: "1. Qual é o nome da galáxia em que se encontram a Terra e o nosso Sistema Solar?", txtResposta: ["Andrômeda", "Nuvem de Magalhães", "Via Láctea", "Nuvem de Oort"], respostaCorreta: 2),
+        perguntaTecnologia (imgPergunta: "cie - pergunta 1", txtPergunta: "1. Qual é o nome da galáxia em que se encontram a Terra e o nosso Sistema Solar?", txtResposta: ["Andrômeda", "Nuvem de Magalhães", "Via Láctea", "Nuvem de Oort"], respostaCorreta: 2)
+        
+    ]
+    
+    var numeroRespondidoCorretamente :Int {
+        didSet {
+            UserDefaults.standard.set(self.numeroRespondidoCorretamente, forKey: acertoKey3)
+        }
+    }
+    
+    func respondeu(pergunta:perguntaTecnologia, resposta:Int){
+        if pergunta.respostaCorreta == resposta{
+            numeroRespondidoCorretamente += 1
+        }
+    }
+    
+    var perguntaAtualTecnolioga: Int {
+        didSet {
+            UserDefaults.standard.set(self.perguntaAtualTecnolioga, forKey: perguntaKey3)
+        }
+    }
+    
+    func resultado() -> (acertos3:Int,  total3:Int){
+        
+        return (acertos3: numeroRespondidoCorretamente, total3: perguntasTecnologia.count)
+        
+    }
+    
+    func proximaPergunta(){
+        perguntaAtualTecnolioga += 1
+    }
+    
+    private init (){
+        self.perguntaAtualTecnolioga = UserDefaults.standard.integer(forKey: perguntaKey3)
+        self.numeroRespondidoCorretamente = UserDefaults.standard.integer(forKey: acertoKey3)
+    }
+}
 
 //commit

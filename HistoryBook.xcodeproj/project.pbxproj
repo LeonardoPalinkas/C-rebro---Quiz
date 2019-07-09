@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D400B4DA22CFFCD90070EC5F /* MaisQuestoes2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400B4D922CFFCD90070EC5F /* MaisQuestoes2ViewController.swift */; };
+		D4174A8822D4C73D0093EC7A /* TecnologiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4174A8722D4C73D0093EC7A /* TecnologiaViewController.swift */; };
+		D4174A8A22D4C7790093EC7A /* MaisQuestoes3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4174A8922D4C7790093EC7A /* MaisQuestoes3ViewController.swift */; };
 		D46EDC6322CE576700BDA7E3 /* perguntas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EDC6222CE576700BDA7E3 /* perguntas.swift */; };
 		D46EDC6622CE57DE00BDA7E3 /* dados.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EDC6522CE57DE00BDA7E3 /* dados.swift */; };
 		D46EDC6A22CEB3EB00BDA7E3 /* Ciencia2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EDC6922CEB3EB00BDA7E3 /* Ciencia2ViewController.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		D400B4D922CFFCD90070EC5F /* MaisQuestoes2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaisQuestoes2ViewController.swift; sourceTree = "<group>"; };
+		D4174A8722D4C73D0093EC7A /* TecnologiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecnologiaViewController.swift; sourceTree = "<group>"; };
+		D4174A8922D4C7790093EC7A /* MaisQuestoes3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaisQuestoes3ViewController.swift; sourceTree = "<group>"; };
 		D46EDC6222CE576700BDA7E3 /* perguntas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perguntas.swift; sourceTree = "<group>"; };
 		D46EDC6522CE57DE00BDA7E3 /* dados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dados.swift; sourceTree = "<group>"; };
 		D46EDC6922CEB3EB00BDA7E3 /* Ciencia2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ciencia2ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				D46EDC6922CEB3EB00BDA7E3 /* Ciencia2ViewController.swift */,
 				D46EDC7022CEF6DA00BDA7E3 /* MaisQuestoesViewController.swift */,
 				D400B4D922CFFCD90070EC5F /* MaisQuestoes2ViewController.swift */,
+				D4174A8722D4C73D0093EC7A /* TecnologiaViewController.swift */,
+				D4174A8922D4C7790093EC7A /* MaisQuestoes3ViewController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D400B4DA22CFFCD90070EC5F /* MaisQuestoes2ViewController.swift in Sources */,
+				D4174A8822D4C73D0093EC7A /* TecnologiaViewController.swift in Sources */,
 				D4EDBC3622CCDCD700062C98 /* ViewController.swift in Sources */,
 				D46EDC7122CEF6DA00BDA7E3 /* MaisQuestoesViewController.swift in Sources */,
 				D4EDBC3422CCDCD700062C98 /* AppDelegate.swift in Sources */,
@@ -185,6 +192,7 @@
 				D46EDC6A22CEB3EB00BDA7E3 /* Ciencia2ViewController.swift in Sources */,
 				D46EDC6C22CECD0300BDA7E3 /* CienciaTableViewCell.swift in Sources */,
 				D46EDC6322CE576700BDA7E3 /* perguntas.swift in Sources */,
+				D4174A8A22D4C7790093EC7A /* MaisQuestoes3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
